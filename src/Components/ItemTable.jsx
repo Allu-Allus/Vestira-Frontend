@@ -37,7 +37,7 @@ function ItemTable({inventoryList,setIsDataAdded,onDelete,inventoryId  }) {
                     <th>Color</th>
                     <th>Quantity</th>
                     <th>Price</th>
-                    {/* <th>Status</th> */}
+                    <th>Description</th>
                     <th>Edit</th>
                     <th>Delete</th>
                   </tr>
@@ -52,6 +52,8 @@ function ItemTable({inventoryList,setIsDataAdded,onDelete,inventoryId  }) {
                     <td>{inventory?.color}</td>
                     <td>{inventory?.quantity}</td>
                     <td>₹{inventory?.price}</td>
+                                        <td>₹{inventory?.description}</td>
+
                     {/* <td><FaCheckCircle className="me-1" />{inventory?.status} </td> */}
                     <td><AddEdit isAdd={true} item={inventory}  setIsDataAdded={setIsDataAdded} inventoryId={inventory.id} /></td>
                     <td ><DeleteProduct   id={inventory.id} onDelete={()=>onDelete(inventory.id)}  /></td>
