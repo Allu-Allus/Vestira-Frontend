@@ -56,7 +56,7 @@ useEffect(()=>{
   {inventoryData?.length > 0 ? (
   <ItemTable inventoryList={inventoryData} setIsDataAdded={setIsDataAdded}  onDelete={handleDelete} />
 ) : (
-  <h4 className="text-center text-danger w-100">No Jobs Added</h4>
+  <h4 className="text-center text-danger w-100">No Items Added</h4>
 )}
 
   
