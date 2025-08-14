@@ -52,7 +52,7 @@ function ItemTable({inventoryList,setIsDataAdded,onDelete,inventoryId  }) {
                     <td>{inventory?.color}</td>
                     <td>{inventory?.quantity}</td>
                     <td>₹{inventory?.price}</td>
-                                        <td>₹{inventory?.description}</td>
+                                        <td>{inventory?.description}</td>
 
                     {/* <td><FaCheckCircle className="me-1" />{inventory?.status} </td> */}
                     <td><AddEdit isAdd={true} item={inventory}  setIsDataAdded={setIsDataAdded} inventoryId={inventory.id} /></td>
